@@ -64,15 +64,19 @@ Data was cleaned and transformed in Power BI to ensure accurate analysis:
 
 ---
 
-## 📁 Repository Structure
+## 📂 Project Files
 
-```
-├── Retail_Performance_Dashboard.pbix   # Power BI dashboard file
-├── Retail_Performance_Dashboard.pdf    # Exported dashboard
-├── dashboard.png                       # Dashboard preview image
-├── data/                               # Raw datasets used
-└── README.md                           # Project documentation
-```
+- **Dashboard**
+  - `dashboard/Retail_Performance_Dashboard.pbix`
+  - `dashboard/Retail_Performance_Dashboard.pdf`
+  - `dashboard/dashboard.png`
+
+- **Datasets**
+  - `data/Customers.xlsx`
+  - `data/Products.xlsx`
+  - `data/Sales_Orders.xlsx`
+  - `data/Salesperson.csv`
+  - `data/Stores.xlsx`
 
 ---
 
