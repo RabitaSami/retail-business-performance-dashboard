@@ -2,15 +2,17 @@
 
 ## 📊 Project Overview
 
-This project presents an interactive Power BI dashboard designed to analyse retail business performance across multiple dimensions, including sales, profitability, warehouse efficiency, and customer value.
+This project showcases an interactive Power BI dashboard built to analyse retail business performance across sales, profitability, warehouse operations, and customer behaviour.
 
-The goal of this analysis is to support data-driven decision-making by identifying key trends, operational inefficiencies, and high-performing areas within the business.
+The dashboard enables data-driven decision-making by uncovering key trends, inefficiencies, and high-performing areas within the business.
+
+✔ Designed to simulate real-world business intelligence reporting used in data analyst roles
 
 ---
 
 ## 📷 Dashboard Preview
 
-![Dashboard](dashboard.png)
+![Dashboard](dashboard/dashboard.png)
 
 ---
 
@@ -19,7 +21,7 @@ The goal of this analysis is to support data-driven decision-making by identifyi
 * **Sales Concentration:** A small number of product categories consistently generate the majority of total sales across all years (2023–2025)
 * **Operational Efficiency:** Warehouse shipping preparation times are relatively consistent, with only minor variations between locations
 * **Sales Performance:** Profit margins are similar across regions, indicating balanced performance among salespeople
-* **Warehouse Strategy:** Certain warehouses contribute significantly less revenue and may be considered for optimisation or closure
+* **Warehouse Strategy:** Underperforming warehouses contribute significantly less revenue and present opportunities for optimisation or consolidation
 * **Customer Value:** A strong positive relationship exists between customer sales and profit, showing that high-value customers drive profitability
 
 ---
@@ -28,10 +30,10 @@ The goal of this analysis is to support data-driven decision-making by identifyi
 
 This dashboard answers key business questions:
 
-1. What are the top 5 product categories by net sales (2023–2025)?
+1. What are the top product categories by net sales (2023–2025)?
 2. Are there warehouses that take longer to prepare orders for shipping?
 3. Which salesperson has the highest profit margin in each region?
-4. Which warehouse(s) should be shut down based on performance?
+4. Which warehouse(s) should be optimised or shut down based on performance?
 5. What is the relationship between customer sales and profit?
 
 ---
@@ -42,16 +44,25 @@ Data was cleaned and transformed in Power BI to ensure accurate analysis:
 
 * Corrected data types (dates, numerical values, and text fields)
 * Created key measures using DAX:
-
   * **Total Net Sales**
   * **Total Profit**
   * **Profit Margin (%)**
 * Calculated **Shipping Preparation Time** using date differences
 * Established relationships between datasets:
-
-  * Sales Orders, Customers, Products, Salespeople, and Stores
+  * Sales Orders, Customers, Products, Salesperson, and Stores
 * Applied **ranking logic (RANKX)** to identify top-performing salespeople by region
 * Aggregated data by year, category, warehouse, and customer for analysis
+
+---
+
+## 📊 Data Model
+
+A structured data model was built using a star schema:
+
+- **Fact Table:** Sales Orders  
+- **Dimension Tables:** Customers, Products, Salesperson, Stores  
+
+This model enables efficient filtering, aggregation, and scalable analysis across multiple business dimensions.
 
 ---
 
@@ -95,22 +106,22 @@ Data was cleaned and transformed in Power BI to ensure accurate analysis:
 
 This dashboard provides actionable insights that can help organisations:
 
-* Focus on high-performing product categories
-* Improve warehouse efficiency
-* Identify underperforming locations
-* Optimise sales strategies
-* Better understand customer profitability
+* Focus on high-performing product categories  
+* Improve warehouse efficiency  
+* Identify underperforming locations  
+* Optimise sales strategies  
+* Better understand customer profitability  
 
 ---
 
 ## 👤 Author
 
-**Rabita Sami**
-Business Information Systems Student – Curtin University
+**Rabita Sami**  
+Business Information Systems Student – Curtin University  
 
 ---
 
 ## 📌 Notes
 
-This project was developed as part of an academic assignment using a structured dataset.
+This project was developed as part of an academic assignment using a structured dataset.  
 All analysis and insights were derived using Power BI and reviewed for accuracy.
